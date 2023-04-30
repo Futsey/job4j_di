@@ -1,2 +1,13 @@
-package simpledi;public class ConsoleInput {
+package simpledi;
+
+import java.util.Scanner;
+
+public class ConsoleInput {
+
+    private Scanner scanner = new Scanner(System.in);
+
+    public String askStr(String question) {
+        System.out.print(question);
+        return scanner.nextLine();
+    }
 }
