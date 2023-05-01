@@ -5,7 +5,6 @@ public class StartUI {
     private Store store;
     private ConsoleInput consoleInput;
 
-
     public StartUI(Store store, ConsoleInput consoleInput) {
         this.store = store;
         this.consoleInput = consoleInput;
