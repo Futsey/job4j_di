@@ -1,17 +1,27 @@
 package simpledi;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class StartUI {
 
     private Store store;
+
+    @Autowired
     private ConsoleInput consoleInput;
 
+    @Autowired
+    public void setStore(Store store) {
+        this.store = store;
+    }
+
+    /* Using @Autowired
     public StartUI(Store store, ConsoleInput consoleInput) {
         this.store = store;
         this.consoleInput = consoleInput;
     }
+     */
 
     public void add(String value) {
         store.add(value);
