@@ -14,6 +14,6 @@ public class Main {
         ui.add("Ivan ivanov");
         ui.print();
 
-        ui.addQuestion("How are you?");
+        ui.addQuestion("How are you, CIbot?");
     }
 }
